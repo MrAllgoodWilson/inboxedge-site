@@ -1,0 +1,268 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>InboxEdge Agency</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap">
+
+<style>
+:root {
+  --bg:       #0a0a0f;
+  --bg-2:     #111118;
+  --bg-card:  #15151e;
+  --border:   #22222e;
+  --fg:       #f0f0f5;
+  --fg-2:     #9090a8;
+  --fg-3:     #5a5a72;
+  --accent:   #5b8cff;
+  --accent-2: #3d6ee8;
+  --glow:     rgba(91,140,255,0.12);
+  --good:     #34d88c;
+  --radius:   10px;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg:#f5f5fa;--bg-2:#eeeef5;--bg-card:#ffffff;--border:#dddde8;--fg:#0a0a14;--fg-2:#44445a;--fg-3:#8888a0;--accent:#3a6ef5;--accent-2:#2255d4;--glow:rgba(58,110,245,0.08);color-scheme:light;
+  }
+}
+:root[data-theme="light"] {
+  --bg:#f5f5fa;--bg-2:#eeeef5;--bg-card:#ffffff;--border:#dddde8;--fg:#0a0a14;--fg-2:#44445a;--fg-3:#8888a0;--accent:#3a6ef5;--accent-2:#2255d4;--glow:rgba(58,110,245,0.08);color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html,body{height:100%;}
+body{background:var(--bg);color:var(--fg);font-family:'Inter',system-ui,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+img{max-width:100%;display:block;}
+.wrap{max-width:1100px;margin:0 auto;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px));}
+section{padding-block:96px;}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:51;background:var(--bg);}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px));max-width:1100px;margin:0 auto;}
+.logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.2rem;letter-spacing:-0.02em;color:var(--fg);text-decoration:none;}
+.logo span{color:var(--accent);}
+.nav-links{display:flex;align-items:center;gap:32px;list-style:none;}
+.nav-links a{font-size:0.875rem;font-weight:500;color:var(--fg-2);text-decoration:none;transition:color 0.2s;}
+.nav-links a:hover{color:var(--fg);}
+.nav-cta{background:var(--accent);color:#fff!important;padding:8px 18px;border-radius:6px;font-weight:500!important;transition:background 0.2s!important;}
+.nav-cta:hover{background:var(--accent-2)!important;color:#fff!important;}
+.hero{padding-block:120px 96px;text-align:center;position:relative;overflow:hidden;}
+.hero::before{content:"";position:absolute;top:-40%;left:50%;transform:translateX(-50%);width:700px;height:500px;background:radial-gradient(ellipse at center,var(--glow) 0%,transparent 70%);pointer-events:none;}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:0.75rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);border:1px solid color-mix(in srgb,var(--accent) 30%,transparent);background:color-mix(in srgb,var(--accent) 8%,transparent);padding:6px 14px;border-radius:100px;margin-bottom:28px;}
+.eyebrow-dot{width:6px;height:6px;background:var(--accent);border-radius:50%;animation:pulse 2s ease-in-out infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.3;}}
+h1{font-family:'Syne',sans-serif;font-size:clamp(2.6rem,6vw,4.5rem);font-weight:800;line-height:1.05;letter-spacing:-0.03em;text-wrap:balance;margin-bottom:24px;color:var(--fg);}
+h1 em{font-style:normal;color:var(--accent);}
+.hero-sub{font-size:clamp(1rem,2vw,1.2rem);color:var(--fg-2);max-width:580px;margin:0 auto 40px;font-weight:300;line-height:1.7;}
+.hero-actions{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;font-family:'Inter',sans-serif;font-weight:500;font-size:0.95rem;padding:14px 28px;border-radius:8px;text-decoration:none;transition:background 0.2s,transform 0.15s;}
+.btn-primary:hover{background:var(--accent-2);transform:translateY(-1px);}
+.btn-secondary{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--fg-2);font-family:'Inter',sans-serif;font-weight:500;font-size:0.95rem;padding:14px 28px;border-radius:8px;border:1px solid var(--border);text-decoration:none;transition:border-color 0.2s,color 0.2s;}
+.btn-secondary:hover{border-color:var(--fg-3);color:var(--fg);}
+.hero-stat-row{display:flex;align-items:center;justify-content:center;gap:40px;margin-top:64px;flex-wrap:wrap;}
+.hero-stat{text-align:center;}
+.hero-stat-num{font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;color:var(--fg);letter-spacing:-0.03em;font-variant-numeric:tabular-nums;}
+.hero-stat-num span{color:var(--accent);}
+.hero-stat-label{font-size:0.8rem;color:var(--fg-3);letter-spacing:0.04em;text-transform:uppercase;margin-top:2px;}
+.stat-divider{width:1px;height:36px;background:var(--border);}
+.proof-band{border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--bg-2);padding-block:24px;overflow:hidden;}
+.proof-label{text-align:center;font-size:0.75rem;color:var(--fg-3);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:20px;}
+.platform-row{display:flex;align-items:center;justify-content:center;gap:36px;flex-wrap:wrap;}
+.platform-pill{display:flex;align-items:center;gap:8px;font-size:0.85rem;font-weight:500;color:var(--fg-2);padding:8px 16px;border:1px solid var(--border);border-radius:6px;background:var(--bg-card);}
+.platform-icon{width:18px;height:18px;border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;}
+.section-label{font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;}
+h2{font-family:'Syne',sans-serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;letter-spacing:-0.025em;line-height:1.1;text-wrap:balance;color:var(--fg);margin-bottom:16px;}
+.section-sub{font-size:1.05rem;color:var(--fg-2);max-width:520px;margin-bottom:56px;font-weight:300;}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2px;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;background:var(--border);}
+.step{background:var(--bg-card);padding:36px 28px;position:relative;}
+.step-num{font-family:'Syne',sans-serif;font-size:0.7rem;font-weight:700;letter-spacing:0.12em;color:var(--accent);text-transform:uppercase;margin-bottom:16px;}
+.step h3{font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:700;letter-spacing:-0.01em;margin-bottom:8px;color:var(--fg);}
+.step p{font-size:0.9rem;color:var(--fg-2);line-height:1.65;}
+.services-section{background:var(--bg-2);}
+.packages{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;}
+.package{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:36px 28px;display:flex;flex-direction:column;transition:border-color 0.2s;position:relative;}
+.package:hover{border-color:var(--accent);}
+.package.featured{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 5%,var(--bg-card));}
+.package-badge{position:absolute;top:-12px;left:28px;background:var(--accent);color:#fff;font-size:0.7rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:4px 12px;border-radius:100px;}
+.package-tier{font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--fg-3);margin-bottom:8px;}
+.package-price{font-family:'Syne',sans-serif;font-size:2.5rem;font-weight:800;letter-spacing:-0.03em;color:var(--fg);line-height:1;margin-bottom:4px;font-variant-numeric:tabular-nums;}
+.package-price span{font-size:1rem;font-weight:400;color:var(--fg-3);letter-spacing:0;}
+.package-desc{font-size:0.875rem;color:var(--fg-2);margin-bottom:28px;padding-bottom:28px;border-bottom:1px solid var(--border);}
+.package-features{list-style:none;display:flex;flex-direction:column;gap:12px;flex:1;margin-bottom:28px;}
+.package-features li{display:flex;align-items:flex-start;gap:10px;font-size:0.875rem;color:var(--fg-2);line-height:1.5;}
+.check-icon{width:16px;height:16px;border-radius:50%;background:color-mix(in srgb,var(--good) 15%,transparent);color:var(--good);display:flex;align-items:center;justify-content:center;font-size:10px;flex-shrink:0;margin-top:2px;}
+.pkg-btn{display:block;text-align:center;padding:12px;border-radius:6px;font-weight:500;font-size:0.9rem;text-decoration:none;transition:background 0.2s,color 0.2s;border:1px solid var(--border);color:var(--fg-2);}
+.pkg-btn:hover{border-color:var(--accent);color:var(--accent);}
+.package.featured .pkg-btn{background:var(--accent);border-color:var(--accent);color:#fff;}
+.package.featured .pkg-btn:hover{background:var(--accent-2);}
+.results-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;background:var(--border);}
+.result-card{background:var(--bg-card);padding:40px 28px;text-align:center;}
+.result-num{font-family:'Syne',sans-serif;font-size:2.6rem;font-weight:800;letter-spacing:-0.04em;color:var(--accent);line-height:1;margin-bottom:8px;font-variant-numeric:tabular-nums;}
+.result-label{font-size:0.875rem;color:var(--fg-2);line-height:1.5;}
+.contact-section{background:var(--bg-2);}
+.contact-box{max-width:640px;margin:0 auto;text-align:center;}
+.contact-email{display:inline-flex;align-items:center;gap:10px;margin-top:32px;padding:16px 24px;border:1px solid var(--border);border-radius:8px;background:var(--bg-card);font-size:1rem;font-weight:500;color:var(--fg);position:relative;}
+.email-address{font-family:'Inter',monospace;color:var(--accent);user-select:all;}
+.copy-btn{cursor:pointer;background:none;border:none;color:var(--fg-3);font-size:0.8rem;padding:4px 10px;border-radius:4px;border:1px solid var(--border);font-family:'Inter',sans-serif;transition:color 0.2s,border-color 0.2s;}
+.copy-btn:hover{color:var(--accent);border-color:var(--accent);}
+footer{border-top:1px solid var(--border);padding-block:32px;}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px));max-width:1100px;margin:0 auto;}
+.footer-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1rem;color:var(--fg);}
+.footer-logo span{color:var(--accent);}
+.footer-copy{font-size:0.8rem;color:var(--fg-3);}
+@media(max-width:600px){section{padding-block:64px;}.hero{padding-block:72px 56px;}.hero-stat-row{gap:24px;}.stat-divider{display:none;}.nav-links{display:none;}}
+</style>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo">Inbox<span>Edge</span></a>
+    <ul class="nav-links">
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#results">Results</a></li>
+      <li><a href="#contact" class="nav-cta">Get Started</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow"><span class="eyebrow-dot"></span>AI-Powered Email Marketing</div>
+    <h1>Your email list is<br>a revenue engine.<br><em>We turn it on.</em></h1>
+    <p class="hero-sub">InboxEdge Agency builds and manages high-converting email systems for e-commerce brands — from welcome flows to win-back campaigns. Done for you, every month.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Book a Free Audit <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="#services" class="btn-secondary">See Our Packages</a>
+    </div>
+    <div class="hero-stat-row">
+      <div class="hero-stat"><div class="hero-stat-num">45<span>:1</span></div><div class="hero-stat-label">Average Email ROI</div></div>
+      <div class="stat-divider"></div>
+      <div class="hero-stat"><div class="hero-stat-num"><span>$</span>500</div><div class="hero-stat-label">Starting Monthly</div></div>
+      <div class="stat-divider"></div>
+      <div class="hero-stat"><div class="hero-stat-num">48<span>hr</span></div><div class="hero-stat-label">Launch Turnaround</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="proof-band">
+  <div class="proof-label">Platforms we work with</div>
+  <div class="platform-row">
+    <div class="platform-pill"><div class="platform-icon" style="background:#1a1a2e;color:#fd6a02;">K</div>Klaviyo</div>
+    <div class="platform-pill"><div class="platform-icon" style="background:#1a1a2e;color:#7ab648;">S</div>Shopify</div>
+    <div class="platform-pill"><div class="platform-icon" style="background:#1a1a2e;color:#635bff;">St</div>Stripe</div>
+    <div class="platform-pill"><div class="platform-icon" style="background:#1a1a2e;color:#ea4335;">G</div>Google Workspace</div>
+    <div class="platform-pill"><div class="platform-icon" style="background:#1a1a2e;color:#5b8cff;">A</div>AI-Assisted Copy</div>
+  </div>
+</div>
+
+<section id="how">
+  <div class="wrap">
+    <div class="section-label">The Process</div>
+    <h2>From zero to revenue<br>in 48 hours</h2>
+    <p class="section-sub">We handle strategy, copy, automation setup, and ongoing optimization — so you can focus on your product.</p>
+    <div class="steps">
+      <div class="step"><div class="step-num">Step 01</div><h3>Brand Audit</h3><p>We audit your current email presence, list health, platform setup, and revenue gaps. Most brands leave 20–30% of revenue on the table here.</p></div>
+      <div class="step"><div class="step-num">Step 02</div><h3>Strategy & Copy</h3><p>We build your full email calendar — welcome flows, abandoned cart sequences, post-purchase campaigns, and promos — all written for your brand voice.</p></div>
+      <div class="step"><div class="step-num">Step 03</div><h3>Klaviyo Setup</h3><p>We configure your automations, segment your list, and set up A/B tests. Every flow is dialed in before it goes live.</p></div>
+      <div class="step"><div class="step-num">Step 04</div><h3>Ongoing Management</h3><p>Monthly campaigns, performance reports, and continuous optimization. You see the revenue numbers; we handle the execution.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="services-section">
+  <div class="wrap">
+    <div class="section-label">Packages</div>
+    <h2>Simple, transparent pricing</h2>
+    <p class="section-sub">No setup fees. No long-term contracts. Cancel anytime.</p>
+    <div class="packages">
+      <div class="package">
+        <div class="package-tier">Basic</div>
+        <div class="package-price">$500<span>/mo</span></div>
+        <p class="package-desc">For brands ready to build their email foundation and start capturing revenue from their list.</p>
+        <ul class="package-features">
+          <li><span class="check-icon">✓</span>Klaviyo account setup & configuration</li>
+          <li><span class="check-icon">✓</span>Welcome sequence (3 emails)</li>
+          <li><span class="check-icon">✓</span>1 promotional campaign/month</li>
+          <li><span class="check-icon">✓</span>Basic list segmentation</li>
+          <li><span class="check-icon">✓</span>Monthly performance report</li>
+        </ul>
+        <a href="#contact" class="pkg-btn">Get Started</a>
+      </div>
+      <div class="package featured">
+        <div class="package-badge">Most Popular</div>
+        <div class="package-tier">Standard</div>
+        <div class="package-price">$1,000<span>/mo</span></div>
+        <p class="package-desc">For growing brands ready to build full automation flows and drive consistent monthly revenue from email.</p>
+        <ul class="package-features">
+          <li><span class="check-icon">✓</span>Everything in Basic</li>
+          <li><span class="check-icon">✓</span>Abandoned cart sequence (4 emails)</li>
+          <li><span class="check-icon">✓</span>Post-purchase flow</li>
+          <li><span class="check-icon">✓</span>4 promotional campaigns/month</li>
+          <li><span class="check-icon">✓</span>A/B subject line testing</li>
+          <li><span class="check-icon">✓</span>Advanced segmentation</li>
+          <li><span class="check-icon">✓</span>Bi-weekly strategy call</li>
+        </ul>
+        <a href="#contact" class="pkg-btn">Get Started</a>
+      </div>
+      <div class="package">
+        <div class="package-tier">Premium</div>
+        <div class="package-price">$2,000<span>/mo</span></div>
+        <p class="package-desc">For scaling brands that want a full email department without the overhead of hiring one.</p>
+        <ul class="package-features">
+          <li><span class="check-icon">✓</span>Everything in Standard</li>
+          <li><span class="check-icon">✓</span>Win-back & re-engagement campaigns</li>
+          <li><span class="check-icon">✓</span>VIP customer flow</li>
+          <li><span class="check-icon">✓</span>Full promotional calendar management</li>
+          <li><span class="check-icon">✓</span>SMS integration strategy</li>
+          <li><span class="check-icon">✓</span>Revenue attribution reporting</li>
+          <li><span class="check-icon">✓</span>Weekly strategy calls</li>
+          <li><span class="check-icon">✓</span>Dedicated account manager</li>
+        </ul>
+        <a href="#contact" class="pkg-btn">Get Started</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="results">
+  <div class="wrap">
+    <div class="section-label">By the Numbers</div>
+    <h2>Email works when it's<br>done right</h2>
+    <p class="section-sub">Industry benchmarks for brands with a properly managed email program.</p>
+    <div class="results-grid">
+      <div class="result-card"><div class="result-num">45x</div><div class="result-label">Return on every dollar<br>spent on email marketing</div></div>
+      <div class="result-card"><div class="result-num">30%</div><div class="result-label">Of e-commerce revenue<br>driven by email for top brands</div></div>
+      <div class="result-card"><div class="result-num">4.2%</div><div class="result-label">Average click rate on<br>well-optimized sequences</div></div>
+      <div class="result-card"><div class="result-num">7×</div><div class="result-label">Higher conversion from<br>email vs. social media</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="wrap">
+    <div class="contact-box">
+      <div class="section-label">Get Started</div>
+      <h2>Ready to make your<br>email list pay?</h2>
+      <p class="section-sub" style="margin:0 auto 8px;">We start with a free 30-minute audit. No pitch, no pressure — just an honest look at what your email program is leaving behind.</p>
+      <div class="contact-email">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" style="color:var(--accent)"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        <span class="email-address">al@inboxedgeagency.com</span>
+        <button class="copy-btn" id="copyBtn">Copy</button>
+      </div>
+      <p style="margin-top:16px;font-size:0.8rem;color:var(--fg-3);">Or book directly at <strong style="color:var(--fg-2)">inboxedgeagency.com/book</strong> — page coming soon</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Inbox<span>Edge</span> Agency</div>
+    <div class="footer-copy">© 2026 InboxEdge Agency. Atlanta, GA.</div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('copyBtn').addEventListener('click',function(){
+  navigator.clipboard.writeText('al@inboxedgeagency.com').then(()=>{
+    this.textContent='Copied!';this.style.color='var(--good)';this.style.borderColor='var(--good)';
+    setTimeout(()=>{this.textContent='Copy';this.style.color='';this.style.borderColor='';},2000);
+  }).catch(()=>{const el=document.querySelector('.email-address');const r=document.createRange();r.selectNode(el);window.getSelection().removeAllRanges();window.getSelection().addRange(r);});
+});
+</script>
+</body></html>
