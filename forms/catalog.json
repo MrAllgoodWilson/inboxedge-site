@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-23.1",
+  "version": "2026-10-23.2",
   "forms": [
     {
       "id": "business-intake", "title": "Business review & client intake", "stage": "Start here", "kind": "Questionnaire",
@@ -16,7 +16,7 @@
       "summary": "Define the client relationship, responsibilities, confidentiality and service boundaries.",
       "fields": ["Client legal entity and business address", "Client authorized representative and title", "Proposed effective date", "Approved statement-of-work reference", "Requested cancellation / refund terms for agreement"],
       "sections": [
-        ["Parties and formation", "The agency brand is InboxEdge Agency. The agency's contracting legal entity, business address and applicable jurisdiction must be completed and reviewed before execution. Selecting a package or preparing this document does not form a contract. The final agreement requires authorized acceptance by both parties."],
+        ["Parties and formation", "The agency is TiQology Holdings LLC, doing business as InboxEdge Agency. The business mailing address, formation state and applicable jurisdiction must be completed and reviewed before execution. Selecting a package or preparing this document does not form a contract. The final agreement requires authorized acceptance by both parties."],
         ["Scope and payment", "Only deliverables in a mutually accepted statement of work are included. Public service prices are Basic $500/month, Standard $1,000/month and Premium $2,000/month. Billing cadence, service start, taxes, platform costs, renewal, cancellation, refunds and any setup charges must be expressly agreed before payment. No setup charge is created by this draft. Payment is handled by Stripe; this form never collects card or bank details."],
         ["Client cooperation and approvals", "Client supplies accurate brand information, lawful audience instructions and authorized account invitations. Client identifies one decision-maker. InboxEdge supplies drafts for approval; silence is not permission to send. Client is responsible for substantiating product and promotional claims. InboxEdge may decline unlawful or unsupported instructions."],
         ["Confidentiality and ownership", "Each party restricts confidential information to authorized people who need it for the services and protects it appropriately. The final statement of work identifies ownership and licenses for paid deliverables, agency pre-existing materials and third-party assets. No unrestricted AI training, portfolio use or customer-list reuse is authorized by this draft."],
