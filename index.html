@@ -10,9 +10,11 @@
   --border:   #22222e;
   --fg:       #f0f0f5;
   --fg-2:     #9090a8;
-  --fg-3:     #5a5a72;
+  --fg-3:     #aaaabd;
   --accent:   #5b8cff;
   --accent-2: #3d6ee8;
+  --button:   #2856c7;
+  --button-hover: #2047a6;
   --glow:     rgba(91,140,255,0.12);
   --good:     #34d88c;
   --radius:   10px;
@@ -20,11 +22,11 @@
 }
 @media (prefers-color-scheme: light) {
   :root:not([data-theme="dark"]) {
-    --bg:#f5f5fa;--bg-2:#eeeef5;--bg-card:#ffffff;--border:#dddde8;--fg:#0a0a14;--fg-2:#44445a;--fg-3:#8888a0;--accent:#3a6ef5;--accent-2:#2255d4;--glow:rgba(58,110,245,0.08);color-scheme:light;
+    --bg:#f5f5fa;--bg-2:#eeeef5;--bg-card:#ffffff;--border:#dddde8;--fg:#0a0a14;--fg-2:#44445a;--fg-3:#606078;--accent:#2454c4;--accent-2:#2255d4;--glow:rgba(58,110,245,0.08);color-scheme:light;
   }
 }
 :root[data-theme="light"] {
-  --bg:#f5f5fa;--bg-2:#eeeef5;--bg-card:#ffffff;--border:#dddde8;--fg:#0a0a14;--fg-2:#44445a;--fg-3:#8888a0;--accent:#3a6ef5;--accent-2:#2255d4;--glow:rgba(58,110,245,0.08);color-scheme:light;
+  --bg:#f5f5fa;--bg-2:#eeeef5;--bg-card:#ffffff;--border:#dddde8;--fg:#0a0a14;--fg-2:#44445a;--fg-3:#606078;--accent:#2454c4;--accent-2:#2255d4;--glow:rgba(58,110,245,0.08);color-scheme:light;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html,body{height:100%;}
@@ -107,9 +109,25 @@ footer{border-top:1px solid var(--border);padding-block:32px;}
 .footer-logo span{color:var(--accent);}
 .footer-copy{font-size:0.8rem;color:var(--fg-3);}
 @media(max-width:600px){section{padding-block:64px;}.hero{padding-block:72px 56px;}.hero-stat-row{gap:24px;}.stat-divider{display:none;}.nav-links{display:none;}}
-a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:4px;} .skip-link{position:absolute;left:12px;top:-100px;z-index:100;background:var(--bg-card);padding:12px;color:var(--fg);} .skip-link:focus{top:12px;} @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important;}} @media(max-width:600px){.nav-links{display:flex;gap:12px}.nav-links li:not(:last-child){display:none}.contact-email{max-width:100%;flex-wrap:wrap;justify-content:center}.email-address{overflow-wrap:anywhere}} </style></head><body><a class="skip-link" href="#main">Skip to content</a>
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:4px;} .skip-link{position:absolute;left:12px;top:-100px;z-index:100;background:var(--bg-card);padding:12px;color:var(--fg);} .skip-link:focus{top:12px;} @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important;}} @media(max-width:600px){.nav-links{display:flex;gap:12px}.nav-links li:not(:last-child){display:none}.contact-email{max-width:100%;flex-wrap:wrap;justify-content:center}.email-address{overflow-wrap:anywhere}} </style><style>
+/* Separate button backgrounds from accent text to preserve readable contrast. */
+.nav-cta,.btn-primary,.package-badge,.package.featured .pkg-btn{background:var(--button);color:#fff;}
+.nav-cta:hover,.btn-primary:hover,.package.featured .pkg-btn:hover{background:var(--button-hover)!important;}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0;}
+section[id],main[id]{scroll-margin-top:100px;}
+@media(max-width:600px){
+  .nav-inner{height:auto;min-height:64px;flex-wrap:wrap;gap:12px;padding-block:12px;}
+  .nav-links{display:flex;flex-wrap:wrap;gap:12px 18px;width:100%;}
+  .nav-links li:not(:last-child){display:list-item;}
+  .nav-links a{display:inline-block;padding-block:8px;}
+  .packages,.steps,.results-grid{grid-template-columns:minmax(0,1fr);}
+  .hero-actions>a{justify-content:center;max-width:100%;}
+  section[id],main[id]{scroll-margin-top:160px;}
+}
+</style></head><body><a class="skip-link" href="#main">Skip to content</a>
 
-<nav>
+
+<nav aria-label="Main navigation">
   <div class="nav-inner">
     <a href="#" class="logo">Inbox<span>Edge</span></a>
     <ul class="nav-links">
@@ -127,7 +145,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-off
     <h1>Your email list is<br>a revenue engine.<br><em>We turn it on.</em></h1>
     <p style="color:var(--fg-2);margin-bottom:16px">Pre-launch preview · Service onboarding is being verified.</p><p class="hero-sub">InboxEdge Agency builds and manages high-converting email systems for e-commerce brands — from welcome flows to win-back campaigns. Done for you, every month.</p>
     <div class="hero-actions">
-      <a href="https://manage.kmail-lists.com/subscriptions/subscribe?a=RxdCDe&amp;g=XA2KGr" class="btn-primary">Request a Free Audit <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="https://manage.kmail-lists.com/subscriptions/subscribe?a=RxdCDe&amp;g=XA2KGr" class="btn-primary">Request a Free Audit <svg aria-hidden="true" focusable="false" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
       <a href="#services" class="btn-secondary">See Our Packages</a>
     </div>
     <div class="hero-stat-row">
@@ -185,7 +203,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-off
         <a href="#contact" class="pkg-btn">Get Started</a>
       </div>
       <div class="package featured">
-        <div class="package-badge">Most Popular</div>
+        <div class="package-badge">Featured package</div>
         <div class="package-tier">Standard</div>
         <div class="package-price">$1,000<span>/mo</span></div>
         <p class="package-desc">For growing brands ready to build full automation flows and drive consistent monthly revenue from email.</p>
@@ -227,16 +245,16 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-off
       <h2>Ready to make your<br>email list pay?</h2>
       <p class="section-sub" style="margin:0 auto 8px;">We start with a free 30-minute audit. No pitch, no pressure — just an honest look at what your email program is leaving behind.</p>
       <p style="margin-top:24px"><a class="btn-primary" href="https://manage.kmail-lists.com/subscriptions/subscribe?a=RxdCDe&amp;g=XA2KGr">Request a business review</a></p><div class="contact-email">
-        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" style="color:var(--accent)"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" style="color:var(--accent)"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
         <a class="email-address" href="mailto:al@inboxedgeagency.com?subject=InboxEdge%20business%20audit">al@inboxedgeagency.com</a>
-        <button class="copy-btn" id="copyBtn">Copy</button>
+        <button class="copy-btn" id="copyBtn" type="button" aria-label="Copy business email address">Copy</button>
       </div>
       <p style="margin-top:16px;font-size:0.8rem;color:var(--fg-3);">Business email is connected and delivery has been tested. Email us to request a review. Online appointment booking and paid-service onboarding are still being verified. No payment is collected on this site.</p>
     </div>
   </div>
 </section>
 
-</main><footer>
+<p id="copyStatus" class="sr-only" role="status" aria-live="polite"></p></main><footer>
   <div class="footer-inner">
     <div class="footer-logo">Inbox<span>Edge</span> Agency</div>
     <div class="footer-copy">© 2026 InboxEdge Agency. Atlanta, GA. <a href="#privacy" style="color:var(--fg-2)">Privacy</a></div>
@@ -245,10 +263,14 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-off
 
 <section id="privacy" class="wrap" style="padding-block:32px"><h2>Contact privacy</h2><p>Our inquiry link opens a Klaviyo-hosted form. Klaviyo stores the email and name you submit so InboxEdge can follow up about your review and related services. The form requires email confirmation; you can unsubscribe at any time. Email links open your own email application. This website does not collect payment. Do not send passwords, payment details or customer lists. Ask about account access and data handling before sharing client information.</p></section><script>
 document.getElementById('copyBtn').addEventListener('click',function(){
+  const status=document.getElementById('copyStatus');
+  const fallback=()=>{status.textContent='Copy unavailable. Select the business email address or use its email link.';};
+  if(!navigator.clipboard||!navigator.clipboard.writeText){fallback();return;}
   navigator.clipboard.writeText('al@inboxedgeagency.com').then(()=>{
+    status.textContent='Business email address copied.';
     this.textContent='Copied!';this.style.color='var(--good)';this.style.borderColor='var(--good)';
     setTimeout(()=>{this.textContent='Copy';this.style.color='';this.style.borderColor='';},2000);
-  }).catch(()=>{const el=document.querySelector('.email-address');const r=document.createRange();r.selectNode(el);window.getSelection().removeAllRanges();window.getSelection().addRange(r);});
+  }).catch(fallback);
 });
 </script>
 </body></html>
