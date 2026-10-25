@@ -4,29 +4,29 @@
 
 <style>
 :root {
-  --bg:       #0a0a0f;
-  --bg-2:     #111118;
-  --bg-card:  #15151e;
-  --border:   #22222e;
-  --fg:       #f0f0f5;
-  --fg-2:     #9090a8;
-  --fg-3:     #aaaabd;
-  --accent:   #5b8cff;
-  --accent-2: #3d6ee8;
-  --button:   #2856c7;
-  --button-hover: #2047a6;
-  --glow:     rgba(91,140,255,0.12);
-  --good:     #34d88c;
+  --bg:       #071726;
+  --bg-2:     #0b2132;
+  --bg-card:  #102c3c;
+  --border:   #3a5966;
+  --fg:       #f5f3eb;
+  --fg-2:     #bdcdd0;
+  --fg-3:     #b0c3c7;
+  --accent:   #edc879;
+  --accent-2: #ffe3a5;
+  --button:   #08654f;
+  --button-hover: #07513f;
+  --glow:     rgba(26,164,129,0.19);
+  --good:     #78e2b7;
   --radius:   10px;
   color-scheme: dark;
 }
 @media (prefers-color-scheme: light) {
   :root:not([data-theme="dark"]) {
-    --bg:#f5f5fa;--bg-2:#eeeef5;--bg-card:#ffffff;--border:#dddde8;--fg:#0a0a14;--fg-2:#44445a;--fg-3:#606078;--accent:#2454c4;--accent-2:#2255d4;--glow:rgba(58,110,245,0.08);color-scheme:light;
+    --bg:#faf8f1;--bg-2:#f0f3ed;--bg-card:#ffffff;--border:#72857c;--fg:#102a32;--fg-2:#425951;--fg-3:#53675f;--accent:#795b15;--accent-2:#62490f;--glow:rgba(26,164,129,0.12);color-scheme:light;
   }
 }
 :root[data-theme="light"] {
-  --bg:#f5f5fa;--bg-2:#eeeef5;--bg-card:#ffffff;--border:#dddde8;--fg:#0a0a14;--fg-2:#44445a;--fg-3:#606078;--accent:#2454c4;--accent-2:#2255d4;--glow:rgba(58,110,245,0.08);color-scheme:light;
+  --bg:#faf8f1;--bg-2:#f0f3ed;--bg-card:#ffffff;--border:#72857c;--fg:#102a32;--fg-2:#425951;--fg-3:#53675f;--accent:#795b15;--accent-2:#62490f;--glow:rgba(26,164,129,0.12);color-scheme:light;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html,body{height:100%;}
@@ -124,6 +124,29 @@ section[id],main[id]{scroll-margin-top:100px;}
   .hero-actions>a{justify-content:center;max-width:100%;}
   section[id],main[id]{scroll-margin-top:160px;}
 }
+
+/* Navy, emerald and warm gold, with readable surfaces in both themes. */
+.hero{background:radial-gradient(ellipse at 12% 20%,var(--glow),transparent 58%),linear-gradient(165deg,var(--bg-2),var(--bg));}
+.hero .wrap{position:relative;z-index:1;}
+.hero::after{content:"";position:absolute;bottom:0;left:12%;right:12%;height:1px;background:linear-gradient(90deg,transparent,var(--accent),transparent);opacity:.55;pointer-events:none;}
+.hero-sub,.section-sub{font-weight:400;}
+.logo,.footer-logo{letter-spacing:-.035em;}
+.nav-cta,.btn-primary{box-shadow:0 5px 18px #0002;border:1px solid color-mix(in srgb,var(--accent) 45%,var(--button));}
+.btn-secondary{color:var(--fg);background:var(--bg-card);}
+.step,.result-card{border-top:2px solid color-mix(in srgb,var(--accent) 65%,var(--border));}
+.package{box-shadow:0 12px 30px #0002;border-radius:16px;}
+.package.featured{box-shadow:0 0 0 1px var(--accent),0 18px 44px #0003;}
+.package-tier{color:var(--accent);}
+.pkg-btn{background:var(--bg-2);color:var(--fg);border-color:var(--border);min-height:46px;}
+.platform-pill{border-radius:100px;}
+.contact-section{background:radial-gradient(ellipse at 50% 100%,var(--glow),transparent 70%),var(--bg-2);}
+.contact-box{max-width:700px;}
+.business-address{font-style:normal;color:var(--fg-2);margin-top:24px;line-height:1.8;}
+.business-address a,.footer-contact a{color:var(--accent);text-underline-offset:4px;}
+.footer-contact{width:100%;font-style:normal;font-size:.85rem;color:var(--fg-2);line-height:1.8;overflow-wrap:anywhere;}
+@media(prefers-color-scheme:light){:root:not([data-theme="dark"]){--good:#08654f;}}
+:root[data-theme="light"]{--good:#08654f;}
+@media(max-width:600px){.hero-stat-row{gap:24px 20px;}.package{padding:32px 22px;}.btn-primary,.btn-secondary{min-height:48px;}.footer-inner{align-items:flex-start;}}
 </style></head><body><a class="skip-link" href="#main">Skip to content</a>
 
 
@@ -246,12 +269,13 @@ section[id],main[id]{scroll-margin-top:100px;}
       <h2>Ready to make your<br>email list pay?</h2>
       <p>Monday–Friday, 9 a.m.–6 p.m. Eastern. Weekends by appointment only.</p>
       <p class="section-sub" style="margin:0 auto 8px;">We start with a free 30-minute audit. No pitch, no pressure — just an honest look at what your email program is leaving behind.</p>
-      <p style="margin-top:24px"><a class="btn-primary" href="https://www.jotform.com/262954506255058?package=Free%20business%20review%20or%20undecided">Request a business review</a></p><div class="contact-email">
+      <p style="margin-top:24px"><a class="btn-primary" href="https://www.jotform.com/262954506255058?package=Free%20business%20review%20or%20undecided">Request a business review</a></p><p style="margin-top:16px"><a class="btn-primary" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ36XgbTOIiL19F4vxOlDXK5-YOFHp4iMMaWG3KBht_XL6MU38wI_tvIcX-62Ot0tDEwUt_tSgOf?gv=true">Book a free consultation</a></p><div class="contact-email">
         <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" style="color:var(--accent)"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
         <a class="email-address" href="mailto:al@inboxedgeagency.com?subject=InboxEdge%20business%20audit">al@inboxedgeagency.com</a>
         <button class="copy-btn" id="copyBtn" type="button" aria-label="Copy business email address">Copy</button>
       </div>
-      <p style="margin-top:16px;font-size:0.8rem;color:var(--fg-3);">Use the inquiry form to send your business details and preferred package, or email us. Sending a request does not book an appointment or subscribe you to marketing. Online appointment booking and paid-service onboarding are still being verified. No payment is collected on this site.</p>
+      <address class="business-address">8753 Dunwoody Place STE G<br>Atlanta, GA 30350<br><a href="tel:+18449242588">+1 (844) 924-2588</a></address>
+      <p style="margin-top:16px;font-size:0.8rem;color:var(--fg-3);">Use the inquiry form to send your business details and preferred package, or email us. Sending a request does not book an appointment or subscribe you to marketing. Book a free 30-minute Google Meet consultation using the link below. Your appointment is confirmed only after the booking page confirms it. Paid-service onboarding is still being verified. No payment is collected on this site.</p>
     </div>
   </div>
 </section>
@@ -259,11 +283,12 @@ section[id],main[id]{scroll-margin-top:100px;}
 <p id="copyStatus" class="sr-only" role="status" aria-live="polite"></p></main><footer>
   <div class="footer-inner">
     <div class="footer-logo">Inbox<span>Edge</span> Agency</div>
+    <address class="footer-contact">8753 Dunwoody Place STE G, Atlanta, GA 30350 · <a href="tel:+18449242588">+1 (844) 924-2588</a></address>
     <div class="footer-copy">© 2026 TiQology Holdings LLC, doing business as InboxEdge Agency. <a href="/forms/" style="color:var(--fg-2)">Client Forms</a> · <a href="#privacy" style="color:var(--fg-2)">Privacy</a></div>
   </div>
 </footer>
 
-<section id="privacy" class="wrap" style="padding-block:32px"><h2>Contact privacy</h2><p>InboxEdge Agency is a trade name of TiQology Holdings LLC. Our inquiry links open a Jotform-hosted form. Jotform stores the business contact name, email, business name, website, platform, preferred package, goals and optional consultation preference you submit so InboxEdge can review and respond to your request. A business inquiry does not subscribe you to marketing, accept an agreement or authorize payment. The draft preparation fields on our Client Forms page stay in page memory and are not submitted to InboxEdge. Final signing invitations use Jotform Sign and retain the signed document and audit record; those records are separate from marketing consent. Email links open your own email application. Contact al@inboxedgeagency.com about your information or request; any identity verification will be proportionate to the request. Do not send passwords, API keys, payment details or subscriber lists. Specific retention and processing terms for customer services are agreed before client data access. This website does not collect payment.</p></section><script>
+<section id="privacy" class="wrap" style="padding-block:32px"><h2>Contact privacy</h2><p>InboxEdge Agency is a trade name of TiQology Holdings LLC. Our consultation link opens Google Calendar appointment scheduling, where Google processes your booking name, email, chosen time and generated Meet details. Calendar confirmation, updates and cancellation messages are separate from marketing consent. Our inquiry links open a Jotform-hosted form. Jotform stores the business contact name, email, business name, website, platform, preferred package, goals and optional consultation preference you submit so InboxEdge can review and respond to your request. A business inquiry does not subscribe you to marketing, accept an agreement or authorize payment. The draft preparation fields on our Client Forms page stay in page memory and are not submitted to InboxEdge. Final signing invitations use Jotform Sign and retain the signed document and audit record; those records are separate from marketing consent. Email links open your own email application. Contact al@inboxedgeagency.com about your information or request; any identity verification will be proportionate to the request. Do not send passwords, API keys, payment details or subscriber lists. Specific retention and processing terms for customer services are agreed before client data access. This website does not collect payment.</p></section><script>
 document.getElementById('copyBtn').addEventListener('click',function(){
   const status=document.getElementById('copyStatus');
   const fallback=()=>{status.textContent='Copy unavailable. Select the business email address or use its email link.';};
