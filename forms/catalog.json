@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-25.2",
+  "version": "2026-10-25.3",
   "forms": [
     {
       "id": "business-intake",
@@ -42,9 +42,7 @@
       "kind": "Contract draft",
       "summary": "Define the client relationship, responsibilities, confidentiality and service boundaries.",
       "fields": [
-        "Agency legal contracting name and legal capacity (pending owner confirmation)",
-        "Agency formation jurisdiction, if applicable (not inferred from mailing address)",
-        "Agency authorized signer full name and title (pending owner confirmation)",
+        "Agency registration/legal-form details if applicable to this record (not inferred from mailing address)",
         "Client legal contracting name, legal capacity and business address",
         "Client authorized signer full name and title",
         "Effective date and agreement version",
@@ -56,7 +54,7 @@
       "sections": [
         [
           "Parties and preparation status",
-          "InboxEdge Agency is the service brand. The agency legal contracting name, legal capacity and authorized signer must be confirmed and entered before a final agreement is issued. Do not assume InboxEdge Agency is an LLC or infer formation state or governing law from the address. Business mailing address: 8753 Dunwoody Place STE G, Atlanta, GA 30350. Email: al@inboxedgeagency.com. Telephone: +1 (844) 924-2588. The client is the legal party identified in the completed fields. This preparation copy is not executed; it creates no obligation, signature or payment authorization. The final completed agreement and scope require authorized acceptance by both parties."
+          "The owner confirms InboxEdge Agency as the contracting business, separately and individually owned/registered, and Alfred Wilson, CEO/President, as its authorized signer. The business name is recorded exactly as supplied, without an LLC or corporate suffix. Registry details, legal form and formation jurisdiction have not been independently verified; no registration number, formation state or governing law is inferred from the mailing address. Business mailing address: 8753 Dunwoody Place STE G, Atlanta, GA 30350. Email: al@inboxedgeagency.com. Telephone: +1 (844) 924-2588. The client is the legal party identified in the completed fields. This preparation copy is not executed; it creates no obligation, signature or payment authorization. The final completed agreement and scope require authorized acceptance by both parties."
         ],
         [
           "Scope and document priority",
@@ -100,7 +98,11 @@
         ],
         [
           "Security, incidents and final legal details",
-          "Apply least privilege, individual accounts and multifactor authentication where available. Promptly escalate suspected client-data incidents to the named contact, preserve relevant evidence and share known facts and updates. Complete the actual processing/provider annex before data access. No absolute security guarantee, invented universal incident deadline, arbitration clause, liability cap, governing-law choice or waiver is created here. Any additional legal provisions require actual decisions and review before inclusion. Agency legal party, authority and client-specific scope remain mandatory before final signing."
+          "Apply least privilege, individual accounts and multifactor authentication where available. Promptly escalate suspected client-data incidents to the named contact, preserve relevant evidence and share known facts and updates. Complete the actual processing/provider annex before data access. No absolute security guarantee, invented universal incident deadline, arbitration clause, liability cap, governing-law choice or waiver is created here. Any additional legal provisions require actual decisions and review before inclusion. The agency name and signer are owner-confirmed; complete the actual client identity, scope and human acceptance before final signing."
+        ],
+        [
+          "Agency identity and human acceptance block",
+          "Owner-confirmed agency contracting name: InboxEdge Agency. Authorized signer: Alfred Wilson. Title: CEO/President. Agency signature: ____________________. Date: ____________________. Client legal name: ____________________. Client signer/title: ____________________. Client signature: ____________________. Date: ____________________. All signature and date lines are intentionally blank. This preparation page does not apply a signature, submit an acceptance or execute an agreement; the human parties must review and sign the final identified document."
         ]
       ]
     },
@@ -111,7 +113,6 @@
       "kind": "Contract schedule draft",
       "summary": "Agree on the exact deliverables, schedule, approvals, fees and exclusions.",
       "fields": [
-        "Agency legal contracting name/capacity and authorized signer (pending confirmation)",
         "Client legal party and linked agreement version",
         "Selected package and final scope version",
         "Actual store/account public identifiers",
@@ -158,6 +159,10 @@
         [
           "Owner-only ONE arrangement",
           "The separately approved owner arrangement is InboxEdge Basic at $1 EVERY MONTH for the approved owner customer al@inboxedgeagency.com, renewing monthly until cancelled. ONE is not a public discount or first-month-only offer, and it changes no other customer's recurring price. This preparation page issues no code, verifies no payment and grants no access or marketing permission. An ordinary client scope uses the published package price unless a separate specific exception is accepted."
+        ],
+        [
+          "Agency identity and human acceptance block",
+          "Owner-confirmed agency contracting name: InboxEdge Agency. Authorized signer: Alfred Wilson. Title: CEO/President. Agency signature: ____________________. Date: ____________________. Client legal name: ____________________. Client signer/title: ____________________. Client signature: ____________________. Date: ____________________. All signature and date lines are intentionally blank. This preparation page does not apply a signature, submit an acceptance or execute an agreement; the human parties must review and sign the final identified document."
         ]
       ]
     },
@@ -168,7 +173,6 @@
       "kind": "Authorization draft",
       "summary": "Approve limited access to the correct Shopify, Klaviyo and related accounts.",
       "fields": [
-        "Agency legal contracting name/capacity and authorized signer",
         "Client account owner legal name and authorized representative",
         "Agreement/scope version and authorization effective date",
         "Actual platform/account public identifier",
@@ -204,6 +208,10 @@
         [
           "Revocation and offboarding timing",
           "The client may revoke its platform permissions. Record the revocation and notify the agency through the monitored contact so work can be safely paused or reassigned. End-of-service handoff and access inventory are due within ten business days under the agreement; revocation is distinct from cancelling recurring billing. No payment or signature on this preparation page activates access, and this draft is not an agency invitation."
+        ],
+        [
+          "Agency identity and human acceptance block",
+          "Owner-confirmed agency contracting name: InboxEdge Agency. Authorized signer: Alfred Wilson. Title: CEO/President. Agency signature: ____________________. Date: ____________________. Client legal name: ____________________. Client signer/title: ____________________. Client signature: ____________________. Date: ____________________. All signature and date lines are intentionally blank. This preparation page does not apply a signature, submit an acceptance or execute an agreement; the human parties must review and sign the final identified document."
         ]
       ]
     },
@@ -214,7 +222,6 @@
       "kind": "Contract draft",
       "summary": "Document how client subscriber data may be used, protected, returned and deleted.",
       "fields": [
-        "Agency legal contracting name/capacity and authorized signer (pending confirmation)",
         "Client legal party, controller/business roles and authorized signer",
         "Linked agreement/version, processing purpose and duration",
         "Actual data categories and affected people",
@@ -228,7 +235,7 @@
       "sections": [
         [
           "Parties and processing instructions",
-          "InboxEdge Agency is the service brand; the completed agreement identifies its confirmed legal contracting party and authorized signer. Business contact: 8753 Dunwoody Place STE G, Atlanta, GA 30350; al@inboxedgeagency.com; +1 (844) 924-2588. This is not a designated data-protection-officer appointment. Record the client's actual legal roles and documented instructions. Process only the completed scope's data for the agreed service and duration. No sale, cross-client combination, unrelated marketing or training of general models on client personal data. Minimize, aggregate or redact inputs before approved AI use."
+          "The owner-confirmed contracting business is InboxEdge Agency, separately and individually owned/registered per the owner; authorized signer: Alfred Wilson, CEO/President. No LLC suffix, legal form, registration number or jurisdiction is inferred. Business contact: 8753 Dunwoody Place STE G, Atlanta, GA 30350; al@inboxedgeagency.com; +1 (844) 924-2588. This is not a designated data-protection-officer appointment. Record the client's actual legal roles and documented instructions. Process only the completed scope's data for the agreed service and duration. No sale, cross-client combination, unrelated marketing or training of general models on client personal data. Minimize, aggregate or redact inputs before approved AI use."
         ],
         [
           "Confidentiality and protection",
@@ -248,7 +255,11 @@
         ],
         [
           "Annex completion and no execution",
-          "Legal parties/signers, actual data, systems, jurisdictions, providers, transfer terms, contacts and evidence/rights-assistance arrangements must be completed for this client. The owner-approved operating defaults above do not certify every jurisdiction's compliance or prove an implemented control. This preparation copy is not accepted, signed or a grant of data access."
+          "The agency is InboxEdge Agency; its owner-confirmed authorized signer is Alfred Wilson, CEO/President. Complete the actual client party/signer, data, systems, relevant jurisdictions, providers, transfer terms, contacts and evidence/rights-assistance arrangements for this client. The owner-approved operating defaults above do not certify every jurisdiction's compliance or prove an implemented control. This preparation copy is not accepted, signed or a grant of data access."
+        ],
+        [
+          "Agency identity and human acceptance block",
+          "Owner-confirmed agency contracting name: InboxEdge Agency. Authorized signer: Alfred Wilson. Title: CEO/President. Agency signature: ____________________. Date: ____________________. Client legal name: ____________________. Client signer/title: ____________________. Client signature: ____________________. Date: ____________________. All signature and date lines are intentionally blank. This preparation page does not apply a signature, submit an acceptance or execute an agreement; the human parties must review and sign the final identified document."
         ]
       ]
     },
@@ -364,7 +375,6 @@
       "kind": "Contract draft",
       "summary": "Protect nonpublic information shared during a business discussion.",
       "fields": [
-        "Agency legal contracting name/capacity and authorized signer (pending confirmation)",
         "Other legal party and authorized signer",
         "Both business addresses and notice contacts",
         "Permitted discussion/project purpose",
@@ -384,6 +394,10 @@
         [
           "No transfer or purchase",
           "Sharing information transfers no ownership, license beyond the stated purpose, service commitment or payment obligation. Final parties, term, remedies and applicable law must be reviewed before execution."
+        ],
+        [
+          "Agency identity and human acceptance block",
+          "Owner-confirmed agency contracting name: InboxEdge Agency. Authorized signer: Alfred Wilson. Title: CEO/President. Agency signature: ____________________. Date: ____________________. Client legal name: ____________________. Client signer/title: ____________________. Client signature: ____________________. Date: ____________________. All signature and date lines are intentionally blank. This preparation page does not apply a signature, submit an acceptance or execute an agreement; the human parties must review and sign the final identified document."
         ]
       ]
     },
