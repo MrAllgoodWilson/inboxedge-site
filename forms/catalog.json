@@ -1,150 +1,500 @@
 {
-  "version": "2026-10-25.1",
+  "version": "2026-10-25.2",
   "forms": [
     {
-      "id": "business-intake", "title": "Business review & client intake", "stage": "Start here", "kind": "Questionnaire",
+      "id": "business-intake",
+      "title": "Business review & client intake",
+      "stage": "Start here",
+      "kind": "Questionnaire",
       "summary": "Tell us about your business, email platform, goals and preferred package.",
-      "fields": ["Business website", "Business / trading name", "Current email platform", "Preferred package: Basic $500/month, Standard $1,000/month, Premium $2,000/month, or undecided", "Main goals and current challenges", "Audience countries and business industry", "Preferred consultation days and times (include timezone)"],
+      "fields": [
+        "Business website",
+        "Business / trading name",
+        "Current email platform",
+        "Preferred package: Basic $500/month, Standard $1,000/month, Premium $2,000/month, or undecided",
+        "Main goals and current challenges",
+        "Audience countries and business industry",
+        "Preferred consultation days and times (include timezone)"
+      ],
       "sections": [
-        ["Purpose", "A request for a business review does not create a service contract, book an appointment or authorize a charge. InboxEdge confirms scope and availability before work starts."],
-        ["Agency contact", "TiQology Holdings LLC, doing business as InboxEdge Agency. Business mailing address: 8753 Dunwoody Place STE G, Atlanta, GA 30350. Email: al@inboxedgeagency.com. Telephone: +1 (844) 924-2588. This shared business contact does not combine the contracts, permissions or customer data of separate brands."],
-        ["Scheduling", "Consultations are arranged Monday–Friday, 9 a.m.–6 p.m. America/New_York (Eastern time, including daylight saving). Weekends require a separately agreed appointment."],
-        ["Minimum information", "Use business contact details and approximate audience counts only. Do not include passwords, API keys, payment details, subscriber files or sensitive personal information. A service inquiry does not automatically subscribe you to unrelated marketing."]
+        [
+          "Purpose",
+          "A request for a business review does not create a service contract, book an appointment or authorize a charge. InboxEdge confirms scope and availability before work starts."
+        ],
+        [
+          "Agency contact",
+          "InboxEdge Agency. Business mailing address: 8753 Dunwoody Place STE G, Atlanta, GA 30350. Email: al@inboxedgeagency.com. Telephone: +1 (844) 924-2588. This shared business contact does not combine the contracts, permissions or customer data of separate brands."
+        ],
+        [
+          "Scheduling",
+          "Consultations are arranged Monday–Friday, 9 a.m.–6 p.m. America/New_York (Eastern time, including daylight saving). Weekends require a separately agreed appointment."
+        ],
+        [
+          "Minimum information",
+          "Use business contact details and approximate audience counts only. Do not include passwords, API keys, payment details, subscriber files or sensitive personal information. A service inquiry does not automatically subscribe you to unrelated marketing."
+        ]
       ]
     },
     {
-      "id": "service-agreement", "title": "Agency services agreement", "stage": "Before work", "kind": "Contract draft",
+      "id": "service-agreement",
+      "title": "Agency services agreement",
+      "stage": "Before work",
+      "kind": "Contract draft",
       "summary": "Define the client relationship, responsibilities, confidentiality and service boundaries.",
-      "fields": ["Client legal entity and business address", "Client authorized representative and title", "Agency authorized representative and title", "Proposed effective date and agreement version", "Approved statement-of-work reference and version", "LLC formation state (owner confirmation required)", "Billing start, renewal and any minimum commitment for agreement", "Requested cancellation, refund and service-pause terms for agreement", "Ownership, license and confidentiality terms for agreement", "Legal-review decisions: governing law, dispute process and liability allocation"],
+      "fields": [
+        "Agency legal contracting name and legal capacity (pending owner confirmation)",
+        "Agency formation jurisdiction, if applicable (not inferred from mailing address)",
+        "Agency authorized signer full name and title (pending owner confirmation)",
+        "Client legal contracting name, legal capacity and business address",
+        "Client authorized signer full name and title",
+        "Effective date and agreement version",
+        "Accepted statement-of-work identifier and version",
+        "Service-start date and monthly renewal date",
+        "Client notice email, approval contact and holiday calendar",
+        "Any expressly agreed departure from the standard terms"
+      ],
       "sections": [
-        ["Parties and formation", "The agency is TiQology Holdings LLC, doing business as InboxEdge Agency. Business mailing address: 8753 Dunwoody Place STE G, Atlanta, GA 30350. Email: al@inboxedgeagency.com. Telephone: +1 (844) 924-2588. The LLC formation state, applicable jurisdiction and client identity must be completed and reviewed before execution; a Georgia mailing address does not establish formation state or governing law. Selecting a package or preparing this document does not form a contract. The final agreement requires authorized acceptance by both parties."],
-        ["Scope and payment", "Only deliverables in a mutually accepted statement of work are included. Public service prices are Basic $500/month, Standard $1,000/month and Premium $2,000/month. Billing cadence, service start, taxes, platform costs, renewal, cancellation, refunds and any setup charges must be expressly agreed before payment. No setup charge is created by this draft. Payment is handled by Stripe; this form never collects card or bank details."],
-        ["Client cooperation and approvals", "Client supplies accurate brand information, lawful audience instructions and authorized account invitations. Client identifies one decision-maker. InboxEdge supplies drafts for approval; silence is not permission to send. Client is responsible for substantiating product and promotional claims. InboxEdge may decline unlawful or unsupported instructions."],
-        ["Delivery workflow", "The final statement of work records discovery, account-access checks, baseline measurement, draft delivery, client review, approved implementation and reporting. Record the responsible person, evidence location and acceptance decision for each milestone. Agree how missing access, delayed client feedback, rejected work and service interruptions affect the schedule before execution; this draft imposes no automatic acceptance or delay charge."],
-        ["AI-assisted services and execution authority", "If AI assistance is included, identify its tasks, approved tools, data boundaries, usage limits, review process and human escalation in the final scope. Preparing content or recommendations does not authorize sending messages, changing accounts, purchasing services or making binding commitments. No customer-list training, cross-client data access or autonomous spending is granted. Additional action permissions require a specific recorded client authorization."],
-        ["Confidentiality and ownership", "Each party restricts confidential information to authorized people who need it for the services and protects it appropriately. The final statement of work identifies ownership and licenses for paid deliverables, agency pre-existing materials and third-party assets. No unrestricted AI training, portfolio use or customer-list reuse is authorized by this draft."],
-        ["Documents, communications and changes", "Identify each final agreement, scope, data-processing addendum and authorization by version and give both parties a reproducible copy. Agree document priority where terms conflict and identify monitored notice addresses. Requests to al@inboxedgeagency.com can be routed to the agency for review; the final agreement must specify formal notice and response procedures. Extra fees, budgets, scope or permissions require a mutually accepted change record before implementation."],
-        ["Risk and offboarding", "Revenue, conversions, inbox placement and platform uptime are not guaranteed. Liability allocation, dispute process, governing law and remedies require final legal review and agreement. Cancellation follows the signed terms and includes access revocation, handoff and documented data return/deletion, subject to lawful retention. This draft imposes no automatic waiver, arbitration obligation or blanket nonrefund term."]
+        [
+          "Parties and preparation status",
+          "InboxEdge Agency is the service brand. The agency legal contracting name, legal capacity and authorized signer must be confirmed and entered before a final agreement is issued. Do not assume InboxEdge Agency is an LLC or infer formation state or governing law from the address. Business mailing address: 8753 Dunwoody Place STE G, Atlanta, GA 30350. Email: al@inboxedgeagency.com. Telephone: +1 (844) 924-2588. The client is the legal party identified in the completed fields. This preparation copy is not executed; it creates no obligation, signature or payment authorization. The final completed agreement and scope require authorized acceptance by both parties."
+        ],
+        [
+          "Scope and document priority",
+          "Services are limited to the completed statement of work and named package. Basic is $500/month, Standard $1,000/month and Premium $2,000/month. Client-specific deliverable quantities, dates, dependencies, account identifiers, reviewers and exclusions must be completed before signing. A later mutually accepted change order governs only the terms it expressly changes; the completed scope governs deliverable detail and the services agreement governs general terms. An account-access authorization cannot expand fees or the agreed services."
+        ],
+        [
+          "Monthly billing and service start",
+          "Service is month-to-month with no setup fee, extra minimum commitment, automatic upgrade or annual obligation. The agreed monthly amount is billed in advance on the agreed service-start date and each monthly renewal. Before payment, disclose the recurring amount, renewal schedule, applicable tax treatment and cancellation path. Add only actually applicable, disclosed taxes. Separate platform charges require explicit approval. Start only after the scope is accepted, required access is available and the client is ready; any early payment must state the service and billing dates. No silent billing during an unspecified readiness period. Payment never grants account access or approves a send."
+        ],
+        [
+          "Cancellation",
+          "The client may cancel at any time without a cancellation penalty through a functioning billing portal or al@inboxedgeagency.com. Cancellation takes effect at the end of the current paid period unless the parties agree an earlier end. A request received before the next charge stops future renewals. InboxEdge acknowledges within two business days; an acknowledgment delay does not invalidate a timely request. The client retains its own accounts and data."
+        ],
+        [
+          "Refunds and failed payments",
+          "Duplicate or erroneous charges are refunded. If InboxEdge cannot provide agreed service, it proposes and documents with the client a refund or credit for the undelivered portion. For voluntary mid-period cancellation after work begins, agreed service continues through period-end unless another arrangement is agreed. Disputed or partial work is reviewed against scope and delivery evidence; there is no blanket no-refund rule or waiver of applicable rights. For failed payment, notify the client and allow seven calendar days to resolve it before pausing new work. No late or collection fee is added. Communicate and record a pause; do not hold the client's accounts or data hostage."
+        ],
+        [
+          "Delivery, support and revisions",
+          "Acknowledge requests within two business days during Monday-Friday, 9 a.m.-6 p.m. America/New_York; weekends by appointment. This is a response target, not a full-resolution or 24/7 service guarantee. Within two business days of a ready start, confirm access inventory, baseline, milestone plan and approver. Target the first scoped creative proof within ten business days after required access, assets and brief are complete. Each initial flow receives its own dated build schedule; this target does not promise completion of all Standard or Premium flows in ten days. Include two consolidated revision rounds per initial creative deliverable within the accepted brief. Correct agency mistakes without consuming a creative round. New objectives, extra messages or materially changed offers require a mutually accepted change order; no automatic extra fee."
+        ],
+        [
+          "Client review and live approvals",
+          "The client supplies accurate brand facts, substantiated claims, lawful audience instructions and authorized platform invitations. One named decision-maker supplies consolidated feedback within five business days. Silence never authorizes publishing or sending. Missing access or feedback moves affected dates with notice; no automatic delay fee applies. The scope records treatment of affected recurring work rather than silently assuming rollover or forfeiture. Exact creative version, audience, offer and timing require approval evidence. Content creation, preview/test permission and live activation are separate actions. Business days mean Monday-Friday excluding holidays named in the completed service calendar."
+        ],
+        [
+          "AI assistance and third-party costs",
+          "Human review is required for AI-assisted work. Identify approved tools, tasks, data categories, usage allowance and escalation in the scope; no subscriber-list training, cross-client data access or autonomous spending is granted. Do not purchase services, activate paid SMS, buy lists or expand permissions without specific client authorization. SMS strategy does not include activation or message fees. Client platform charges are separate unless expressly included in the signed scope. InboxEdge may decline unlawful or unsupported instructions."
+        ],
+        [
+          "Confidentiality and final deliverables",
+          "Protect confidential information and disclose it only to authorized people with a service need and confidentiality duties. Information demonstrably public without breach, already lawfully known, independently developed or lawfully received without restriction is excluded. Legally required disclosure is limited to what is required, with notice when permitted. The client receives the agreed final custom creative after payment for that work, subject to third-party licenses. Agency pre-existing templates, methods and tools remain with the agency; the client may use included components as needed for the delivered work. No portfolio, testimonial, customer-list reuse or general-model training permission is implied."
+        ],
+        [
+          "Reporting and outcome limits",
+          "Provide one report per paid monthly service period within ten business days after that period ends. Identify completed work, pending approvals, next actions, actual data sources, attribution window and unavailable metrics. Strategy calls follow the selected scope. Revenue, conversions, inbox placement and platform uptime are not guaranteed. Distinguish platform-attributed sales from demonstrated incremental revenue; do not invent metrics."
+        ],
+        [
+          "Offboarding and retention",
+          "Within ten business days after service end, provide agreed deliverables and an inventory of settings, open work and access; coordinate agency-access removal. Confirm subscription cancellation separately from access revocation. Offer agreed return/export at handoff, then delete agency-controlled working copies within 30 calendar days after handoff, subject to documented instructions and necessary legal holds. Do not delete the client's source account or suppression records. Provider backups/logs follow their actual disclosed retention. Keep agreements, approvals, access records, invoices and delivery evidence for six years after service end with restricted access, excluding unrelated subscriber content; applicable obligations and documented legal holds may require a different schedule. This is a contractual business-record policy, not a claim of a universal statutory period."
+        ],
+        [
+          "Security, incidents and final legal details",
+          "Apply least privilege, individual accounts and multifactor authentication where available. Promptly escalate suspected client-data incidents to the named contact, preserve relevant evidence and share known facts and updates. Complete the actual processing/provider annex before data access. No absolute security guarantee, invented universal incident deadline, arbitration clause, liability cap, governing-law choice or waiver is created here. Any additional legal provisions require actual decisions and review before inclusion. Agency legal party, authority and client-specific scope remain mandatory before final signing."
+        ]
       ]
     },
     {
-      "id": "scope-of-work", "title": "Package & statement of work", "stage": "Before work", "kind": "Contract schedule draft",
+      "id": "scope-of-work",
+      "title": "Package & statement of work",
+      "stage": "Before work",
+      "kind": "Contract schedule draft",
       "summary": "Agree on the exact deliverables, schedule, approvals, fees and exclusions.",
-      "fields": ["Selected package and final scope version", "Client legal entity and linked agreement reference", "Store / account identifiers (public identifiers only)", "Deliverable-by-deliverable description, owner, quantity and first delivery date", "One-time setup versus recurring maintenance", "Acceptance criteria, review window and revision rounds to agree", "Client decision-maker and approval evidence location", "Approved platform / third-party budgets and who pays", "Service start, renewal, minimum commitment and cancellation terms to agree", "Reporting baseline, attribution settings, data sources and cadence", "AI tasks, approved tools, usage allowance and human handoff (if included)", "Dependencies, escalation contact and service-pause procedure to agree"],
+      "fields": [
+        "Agency legal contracting name/capacity and authorized signer (pending confirmation)",
+        "Client legal party and linked agreement version",
+        "Selected package and final scope version",
+        "Actual store/account public identifiers",
+        "Each initial flow message count, owner and dated build milestone",
+        "Recurring maintenance tasks and exact campaign total per paid month",
+        "Premium account manager full name and role (required if Premium)",
+        "Client approver, approval evidence location and review calendar",
+        "Service-start date, monthly renewal date and approved tax disclosure",
+        "Third-party budget/charges, payer and written authorization",
+        "Reporting source, baseline, attribution window and period",
+        "Affected recurring-work rollover or rescheduling treatment",
+        "Approved AI tools/tasks/data/usage boundaries, if included",
+        "Client-specific exceptions mutually accepted by both parties"
+      ],
       "sections": [
-        ["Basic — $500/month", "Proposed published scope: Klaviyo setup/configuration, a three-email welcome sequence, one promotional campaign per month, basic segmentation and a monthly performance report. Confirm which setup deliverables are one-time and which services recur in the final schedule."],
-        ["Standard — $1,000/month", "Proposed published scope: Basic services, a four-email abandoned-cart sequence, post-purchase flow, four promotional campaigns per month, subject-line testing, advanced segmentation and a strategy call every two weeks. Final schedule must clarify that four monthly campaigns is the total, and agree ongoing maintenance and initial build timing."],
-        ["Premium — $2,000/month", "Proposed published scope: Standard services, win-back/re-engagement, VIP flow, promotional calendar, SMS strategy, revenue attribution reporting, weekly strategy calls and an identified account manager. SMS strategy is not paid SMS activation or a promise of unlimited campaigns. Specify campaign volume and the assigned manager before execution."],
-        ["Exclusions and acceptance", "Platform subscriptions, sending fees, paid SMS, media spend, list acquisition, legal advice and work outside the signed scope are excluded unless expressly priced and approved. Specify measurable acceptance criteria, revision limits, access dependencies and a change-order process. No send occurs before the exact content, segment and timing receive approval."],
-        ["Delivery and quality record", "For each agreed deliverable, retain its version, preview or proof, link checks, audience and suppression checks where relevant, assigned reviewer, approval decision and implementation evidence. Agree the review window and correction process in the final scope. A draft, test message or provider success response is not proof of a customer-approved live launch."],
-        ["Reporting and attribution", "Agree the reporting period, baseline, metric definitions, conversion window and source of truth. Distinguish platform-attributed revenue from verified incremental revenue. Identify data gaps, test traffic and unavailable metrics; do not invent results. Reports must separate recommendations, approved changes and actions actually completed."],
-        ["Promotion and billing disclosure", "If a promotion is offered, record its exact code, eligible package, initial amount, duration, redemption limits and recurring amount after the promotion in the final order and checkout. This preparation page does not issue the requested ONE code or determine eligibility. A promotional initial payment does not change the published recurring package prices unless that change is expressly agreed and accurately presented. Do not collect payment until the checkout accurately presents the accepted offer."]
+        [
+          "Basic - $500/month",
+          "One-time onboarding: Klaviyo setup/configuration and a three-email welcome sequence. Recurring: agreed maintenance, one promotional campaign per paid month, basic segmentation and the monthly report. The completed schedule names deliverable dates, accounts and approver. No payment or signed order is created by preparing this scope."
+        ],
+        [
+          "Standard - $1,000/month",
+          "Includes Basic services, with four promotional campaigns TOTAL per paid month, not four plus Basic's one. One-time onboarding adds a four-email abandoned-cart sequence and the agreed post-purchase flow; complete the post-purchase message count and dated milestones. Recurring scope includes agreed upkeep, subject-line testing, advanced segmentation, monthly reporting and a strategy call every two weeks."
+        ],
+        [
+          "Premium - $2,000/month",
+          "Includes Standard services, plus agreed initial win-back/re-engagement and VIP flows, promotional calendar, SMS strategy, revenue-attribution reporting, weekly strategy calls and a named account manager. The client-specific scope MUST state the exact monthly campaign total, flow message counts, dates and real assigned manager before signing. No unlimited campaign volume, staffed role or message count is inferred from this draft. SMS strategy grants no paid activation."
+        ],
+        [
+          "Accepted service conditions",
+          "Month-to-month; no setup fee or extra minimum term. Monthly billing is in advance at the agreed ready start and renewal dates. Cancellation stops the next renewal when received before that charge and normally ends service at the current paid-period end. The agreement's refund, failed-payment and offboarding provisions apply. The first creative proof target is ten business days after complete access/assets/brief; confirm each initial flow's build schedule separately. Two consolidated revision rounds per initial creative deliverable are included, with agency-error correction outside that count. Client feedback is requested within five business days; silence is never live-send approval."
+        ],
+        [
+          "Evidence and acceptance",
+          "Each deliverable records its version, proof, factual claims, link/rendering checks, audience/suppression checks where relevant, reviewer decision and implementation evidence. The scope identifies measurable acceptance criteria and any client-specific dependencies. A draft, test message or provider response is not customer approval of a live launch. Identify what happens to recurring work affected by missing access or delayed approval; do not silently assume forfeiture or rollover."
+        ],
+        [
+          "Costs, exclusions and changes",
+          "Platform subscriptions, sending fees, paid SMS, media spend, list acquisition, legal advice and out-of-scope work are excluded unless specifically priced and accepted. No new spend, wider access or extra fee without an agreed change order. A client's own account remains theirs. Separate authorizations govern live sending and account changes."
+        ],
+        [
+          "Reporting",
+          "Deliver the monthly report within ten business days after the paid period ends. Agree baseline, source of truth, metric definitions and attribution window. Separate completed actions from recommendations and pending approvals; label unavailable data and test traffic. Do not equate attributed sales with proven incremental revenue."
+        ],
+        [
+          "Owner-only ONE arrangement",
+          "The separately approved owner arrangement is InboxEdge Basic at $1 EVERY MONTH for the approved owner customer al@inboxedgeagency.com, renewing monthly until cancelled. ONE is not a public discount or first-month-only offer, and it changes no other customer's recurring price. This preparation page issues no code, verifies no payment and grants no access or marketing permission. An ordinary client scope uses the published package price unless a separate specific exception is accepted."
+        ]
       ]
     },
     {
-      "id": "account-access", "title": "Platform access authorization", "stage": "Onboarding", "kind": "Authorization draft",
+      "id": "account-access",
+      "title": "Platform access authorization",
+      "stage": "Onboarding",
+      "kind": "Authorization draft",
       "summary": "Approve limited access to the correct Shopify, Klaviyo and related accounts.",
-      "fields": ["Account owner legal name and authorized representative", "Linked client agreement / scope version", "Platform and account / store public identifier", "Invited agency user or partner identity", "Requested permission roles and reason for each", "Permitted read, draft, edit and execute tasks (separately identified)", "Excluded actions and additional approval triggers", "Approved data categories, destinations and export restrictions", "Access expiry / review date", "Client revocation contact and agency access-review contact", "Authorization record reference, date and approval status"],
+      "fields": [
+        "Agency legal contracting name/capacity and authorized signer",
+        "Client account owner legal name and authorized representative",
+        "Agreement/scope version and authorization effective date",
+        "Actual platform/account public identifier",
+        "Named invited agency person or partner identity",
+        "Each permission role, purpose and permitted read/draft/edit/execute tasks",
+        "Excluded actions and separate approval triggers",
+        "Approved data categories/destinations and export restrictions",
+        "Access expiry/review date and client revocation contact",
+        "Named AI tool/person, data boundary and human reviewer if applicable",
+        "Client acceptance evidence and agency permission-check record"
+      ],
       "sections": [
-        ["Least privilege", "Use platform-native collaborator, partner or user invitations. The account owner retains ownership and can revoke access. Do not provide passwords, recovery codes, API tokens or payment credentials in this form."],
-        ["Scope", "Approval applies only to the named accounts, roles, tasks and duration. It does not authorize purchases, billing changes, exports, account ownership changes, additional users, campaigns or data reuse unless separately and specifically approved."],
-        ["Activation and verification", "Before any client work, match the invitation to the named client and account, verify the invited identity and actual permissions, and record the acceptance evidence. Keep production and tests distinct. Do not request broader permissions to overcome a denied action; route the missing permission to the account owner. A payment, package selection or completed inquiry does not itself grant account access."],
-        ["AI and action boundaries", "Read-only analysis, content drafting, account edits and live execution are separate permissions. Identify which agency personnel or approved AI tools may perform each task, what data they may receive and who reviews output. Live sending, automation activation and spending remain blocked until the client has explicitly approved the exact action. No authority to make legal, financial or business commitments is implied."],
-        ["Controls and closure", "Use individual accounts and multifactor authentication where available. Keep an access inventory, review permissions and remove agency access during offboarding. Do not share one client's lists, data or credentials with another client."]
+        [
+          "Least privilege",
+          "Use platform-native collaborator, partner or user invitations. The account owner retains ownership and can revoke access. Do not provide passwords, recovery codes, API tokens or payment credentials in this form."
+        ],
+        [
+          "Scope",
+          "Approval applies only to the named accounts, roles, tasks and duration. It does not authorize purchases, billing changes, exports, account ownership changes, additional users, campaigns or data reuse unless separately and specifically approved."
+        ],
+        [
+          "Activation and verification",
+          "Before any client work, match the invitation to the named client and account, verify the invited identity and actual permissions, and record the acceptance evidence. Keep production and tests distinct. Do not request broader permissions to overcome a denied action; route the missing permission to the account owner. A payment, package selection or completed inquiry does not itself grant account access."
+        ],
+        [
+          "AI and action boundaries",
+          "Read-only analysis, content drafting, account edits and live execution are separate permissions. Identify which agency personnel or approved AI tools may perform each task, what data they may receive and who reviews output. Live sending, automation activation and spending remain blocked until the client has explicitly approved the exact action. No authority to make legal, financial or business commitments is implied."
+        ],
+        [
+          "Controls and closure",
+          "Use individual accounts and multifactor authentication where available. Keep an access inventory, review permissions and remove agency access during offboarding. Do not share one client's lists, data or credentials with another client."
+        ],
+        [
+          "Revocation and offboarding timing",
+          "The client may revoke its platform permissions. Record the revocation and notify the agency through the monitored contact so work can be safely paused or reassigned. End-of-service handoff and access inventory are due within ten business days under the agreement; revocation is distinct from cancelling recurring billing. No payment or signature on this preparation page activates access, and this draft is not an agency invitation."
+        ]
       ]
     },
     {
-      "id": "data-processing", "title": "Data processing & confidentiality addendum", "stage": "Before data access", "kind": "Contract draft",
+      "id": "data-processing",
+      "title": "Data processing & confidentiality addendum",
+      "stage": "Before data access",
+      "kind": "Contract draft",
       "summary": "Document how client subscriber data may be used, protected, returned and deleted.",
-      "fields": ["Client controller / business and agency processor identities", "Processing purpose and duration", "Data categories and individuals affected", "Audience jurisdictions", "Approved providers, processing locations and transfer mechanism", "Security and incident contacts", "Retention and return / deletion schedule"],
+      "fields": [
+        "Agency legal contracting name/capacity and authorized signer (pending confirmation)",
+        "Client legal party, controller/business roles and authorized signer",
+        "Linked agreement/version, processing purpose and duration",
+        "Actual data categories and affected people",
+        "Audience jurisdictions and applicable processing requirements",
+        "Actual approved providers/subprocessors, purposes, locations and transfer terms",
+        "Client and agency security/incident contacts and escalation route",
+        "Rights-request instructions, assistance and evidence-review arrangements",
+        "Working-copy return/deletion choice and provider backup/log retention",
+        "Any specific lawful retention or legal-hold exception"
+      ],
       "sections": [
-        ["Instructions and limits", "Define actual legal roles for each activity. Agency processing is limited to documented lawful client instructions for the agreed email services. Do not sell, combine across clients, use for unrelated marketing or train general models on client personal data. Aggregate or redact data before any approved AI-assisted work."],
-        ["Agency contact and unresolved annexes", "TiQology Holdings LLC, doing business as InboxEdge Agency; 8753 Dunwoody Place STE G, Atlanta, GA 30350; al@inboxedgeagency.com; +1 (844) 924-2588. This business contact is not a designated data protection officer appointment. Final processing details, provider list, locations, incident procedure and retention terms must be completed for the actual client before this addendum is signed."],
-        ["Confidentiality and security", "Bind authorized personnel to confidentiality; apply access controls, multifactor authentication where supported, secure transmission, minimum access, separation of client work and a documented incident response. No security guarantee is absolute."],
-        ["Providers and transfers", "List and authorize actual subprocessors and their purposes and locations before use. Address notice/objection procedures, equivalent protections and applicable international transfer requirements. Klaviyo's DPA governs its own processing and does not replace the agency–client agreement."],
-        ["Assistance and end of work", "Agree incident notification without undue delay, assistance with rights requests and assessments, evidence/audit arrangements, and data return/deletion at the client's choice subject to applicable law. Specify a retention schedule and deletion evidence. Applicable privacy laws, annexes and transfer terms require jurisdiction-specific review before execution."]
+        [
+          "Parties and processing instructions",
+          "InboxEdge Agency is the service brand; the completed agreement identifies its confirmed legal contracting party and authorized signer. Business contact: 8753 Dunwoody Place STE G, Atlanta, GA 30350; al@inboxedgeagency.com; +1 (844) 924-2588. This is not a designated data-protection-officer appointment. Record the client's actual legal roles and documented instructions. Process only the completed scope's data for the agreed service and duration. No sale, cross-client combination, unrelated marketing or training of general models on client personal data. Minimize, aggregate or redact inputs before approved AI use."
+        ],
+        [
+          "Confidentiality and protection",
+          "Restrict access to authorized persons who need it and have confidentiality obligations. Use individual accounts, least privilege, multifactor authentication where supported, secure transmission and separate client workspaces. Do not receive passwords, API tokens, identity documents or subscriber files through the public preparation page. Maintain an access inventory and promptly revoke unneeded permissions; no security guarantee is absolute."
+        ],
+        [
+          "Providers and transfers",
+          "The client-specific annex lists actual providers/subprocessors, tasks, data, locations and any required transfer safeguards before processing. Document authorization and the notice/objection process for a provider change. Require appropriate contractual protections. A provider's own DPA does not replace the agency-client terms. Do not invent a provider list, storage region or international transfer mechanism."
+        ],
+        [
+          "Incidents, requests and evidence",
+          "Promptly escalate suspected client-data incidents to the named contact, preserve evidence, share known facts and updates and cooperate on containment/remediation. Follow any applicable documented notification requirements; no universal deadline is invented here. Route data-subject requests to the responsible client and provide agreed assistance without independently disclosing or deleting client data on an unverified request. Record reasonable evidence-review/assessment arrangements and contacts in the annex."
+        ],
+        [
+          "Return, deletion and records",
+          "Use active client working data only for agreed services. Offer the agreed return/export at offboarding and delete agency-controlled working copies within 30 calendar days after handoff, subject to documented instructions and necessary lawful holds. Do not delete the client's source accounts or suppression records. Disclose actual provider backup/log retention and any technical deletion limits before signing. Keep restricted agreements, approval/access records, invoices and delivery evidence for six years after service end, excluding unrelated subscriber content; record any applicable-law variation or necessary hold. Evidence of completion must identify what was returned/deleted and the exceptions."
+        ],
+        [
+          "Annex completion and no execution",
+          "Legal parties/signers, actual data, systems, jurisdictions, providers, transfer terms, contacts and evidence/rights-assistance arrangements must be completed for this client. The owner-approved operating defaults above do not certify every jurisdiction's compliance or prove an implemented control. This preparation copy is not accepted, signed or a grant of data access."
+        ]
       ]
     },
     {
-      "id": "list-permission", "title": "Audience source & consent declaration", "stage": "Before import or send", "kind": "Declaration draft",
+      "id": "list-permission",
+      "title": "Audience source & consent declaration",
+      "stage": "Before import or send",
+      "kind": "Declaration draft",
       "summary": "Record where the audience came from and how opt-outs and permissions are maintained.",
-      "fields": ["List / segment name and approximate count", "Collection sources and dates", "Consent wording / notice version and evidence location (no subscriber upload)", "Audience countries", "Suppression and unsubscribe process", "Purchased, scraped or third-party sources, if any", "Responsible compliance contact"],
+      "fields": [
+        "List / segment name and approximate count",
+        "Collection sources and dates",
+        "Consent wording / notice version and evidence location (no subscriber upload)",
+        "Audience countries",
+        "Suppression and unsubscribe process",
+        "Purchased, scraped or third-party sources, if any",
+        "Responsible compliance contact"
+      ],
       "sections": [
-        ["Evidence, not blanket permission", "Identify the actual collection context and applicable lawful basis or consent for each channel and jurisdiction. Keep source/time/notice evidence in the authorized platform. This business declaration is not subscriber consent and does not cure an unlawfully acquired list."],
-        ["Sending safeguards", "Do not import purchased or scraped audiences for agency sends. Preserve suppression lists and honor opt-outs. Do not resubscribe suppressed contacts through imports. Identify the sender accurately, use truthful subjects and include the required postal address and working unsubscribe mechanism."],
-        ["Shared responsibility", "Client and agency each retain their applicable legal responsibilities. Pause disputed audiences until evidence is reviewed. SMS requires a separate lawful channel-specific workflow and provider readiness; email permission alone does not authorize texts."]
+        [
+          "Evidence, not blanket permission",
+          "Identify the actual collection context and applicable lawful basis or consent for each channel and jurisdiction. Keep source/time/notice evidence in the authorized platform. This business declaration is not subscriber consent and does not cure an unlawfully acquired list."
+        ],
+        [
+          "Sending safeguards",
+          "Do not import purchased or scraped audiences for agency sends. Preserve suppression lists and honor opt-outs. Do not resubscribe suppressed contacts through imports. Identify the sender accurately, use truthful subjects and include the required postal address and working unsubscribe mechanism."
+        ],
+        [
+          "Shared responsibility",
+          "Client and agency each retain their applicable legal responsibilities. Pause disputed audiences until evidence is reviewed. SMS requires a separate lawful channel-specific workflow and provider readiness; email permission alone does not authorize texts."
+        ]
       ]
     },
     {
-      "id": "brand-brief", "title": "Brand, content & asset brief", "stage": "Onboarding", "kind": "Questionnaire",
+      "id": "brand-brief",
+      "title": "Brand, content & asset brief",
+      "stage": "Onboarding",
+      "kind": "Questionnaire",
       "summary": "Capture voice, audience, offers, approved assets and claims that need evidence.",
-      "fields": ["Brand description and target audience", "Voice, tone and examples", "Approved product / offer URLs", "Offers, restrictions, dates and timezone", "Asset library location and license owner", "Claims requiring substantiation", "Brand approver and prohibited topics"],
+      "fields": [
+        "Brand description and target audience",
+        "Voice, tone and examples",
+        "Approved product / offer URLs",
+        "Offers, restrictions, dates and timezone",
+        "Asset library location and license owner",
+        "Claims requiring substantiation",
+        "Brand approver and prohibited topics"
+      ],
       "sections": [
-        ["Rights and accuracy", "Client identifies assets it owns or is licensed to use and the scope of permission. Flag third-party logos, photographs, endorsements and regulated claims for review. Do not assume public availability grants reuse rights."],
-        ["AI-assisted drafts", "Human review and client approval are required before publishing AI-assisted content. Do not put private subscriber data or confidential source documents into unapproved AI tools. No fabricated testimonials, metrics or guarantees are permitted."]
+        [
+          "Rights and accuracy",
+          "Client identifies assets it owns or is licensed to use and the scope of permission. Flag third-party logos, photographs, endorsements and regulated claims for review. Do not assume public availability grants reuse rights."
+        ],
+        [
+          "AI-assisted drafts",
+          "Human review and client approval are required before publishing AI-assisted content. Do not put private subscriber data or confidential source documents into unapproved AI tools. No fabricated testimonials, metrics or guarantees are permitted."
+        ]
       ]
     },
     {
-      "id": "campaign-approval", "title": "Campaign / automation launch approval", "stage": "Before each launch", "kind": "Approval draft",
+      "id": "campaign-approval",
+      "title": "Campaign / automation launch approval",
+      "stage": "Before each launch",
+      "kind": "Approval draft",
       "summary": "Approve an exact version, audience, offer and send schedule.",
-      "fields": ["Campaign / flow identifier and immutable version", "Preview / proof reference", "Approved segment and exclusions", "Offer, links and expiry timezone", "Send date/time/timezone and volume cap", "Tracking and attribution settings", "Approval decision: approve, revise, or reject", "Approver name, title and requested changes"],
+      "fields": [
+        "Campaign / flow identifier and immutable version",
+        "Preview / proof reference",
+        "Approved segment and exclusions",
+        "Offer, links and expiry timezone",
+        "Send date/time/timezone and volume cap",
+        "Tracking and attribution settings",
+        "Approval decision: approve, revise, or reject",
+        "Approver name, title and requested changes"
+      ],
       "sections": [
-        ["Exact approval", "Approval must identify the precise content and audience version. Verify rendering, links, sender, postal address, unsubscribe, consent/suppressions and offer accuracy before scheduling. A changed audience, offer, creative or timing requires renewed approval."],
-        ["No automatic send", "Preparing this draft does not publish a campaign, spend money or activate an automation. Service staff must verify the final approval record in the connected workflow and stop if approval is missing or ambiguous."]
+        [
+          "Exact approval",
+          "Approval must identify the precise content and audience version. Verify rendering, links, sender, postal address, unsubscribe, consent/suppressions and offer accuracy before scheduling. A changed audience, offer, creative or timing requires renewed approval."
+        ],
+        [
+          "No automatic send",
+          "Preparing this draft does not publish a campaign, spend money or activate an automation. Service staff must verify the final approval record in the connected workflow and stop if approval is missing or ambiguous."
+        ]
       ]
     },
     {
-      "id": "change-order", "title": "Scope or budget change request", "stage": "As needed", "kind": "Contract schedule draft",
+      "id": "change-order",
+      "title": "Scope or budget change request",
+      "stage": "As needed",
+      "kind": "Contract schedule draft",
       "summary": "Agree on changes before extra work, fees or access begin.",
-      "fields": ["Original agreement / scope reference", "Requested change and reason", "Added / removed deliverables", "Proposed fee and third-party costs", "Timeline and dependency effects", "Required access changes", "Client and agency decision-makers"],
-      "sections": [["Mutual approval", "Describe the change, cost, timing and effects on the original scope. No additional fee, expanded access, purchase or work is authorized until the final change order is accepted by both parties. Unchanged signed terms continue to apply."]]
+      "fields": [
+        "Original agreement / scope reference",
+        "Requested change and reason",
+        "Added / removed deliverables",
+        "Proposed fee and third-party costs",
+        "Timeline and dependency effects",
+        "Required access changes",
+        "Client and agency decision-makers"
+      ],
+      "sections": [
+        [
+          "Mutual approval",
+          "Describe the change, cost, timing and effects on the original scope. No additional fee, expanded access, purchase or work is authorized until the final change order is accepted by both parties. Unchanged signed terms continue to apply."
+        ]
+      ]
     },
     {
-      "id": "confidentiality", "title": "Mutual confidentiality agreement", "stage": "Optional before discovery", "kind": "Contract draft",
+      "id": "confidentiality",
+      "title": "Mutual confidentiality agreement",
+      "stage": "Optional before discovery",
+      "kind": "Contract draft",
       "summary": "Protect nonpublic information shared during a business discussion.",
-      "fields": ["Both legal parties and business addresses", "Permitted discussion / project purpose", "Authorized recipients", "Confidentiality duration and survival term", "Return / deletion instructions"],
+      "fields": [
+        "Agency legal contracting name/capacity and authorized signer (pending confirmation)",
+        "Other legal party and authorized signer",
+        "Both business addresses and notice contacts",
+        "Permitted discussion/project purpose",
+        "Authorized recipients",
+        "Confidentiality duration and survival period to agree",
+        "Return/deletion instructions and lawful retention exceptions"
+      ],
       "sections": [
-        ["Limited purpose", "Use nonpublic information only to evaluate or perform the stated business purpose. Restrict disclosure to authorized recipients with a need to know and appropriate confidentiality duties; take reasonable protective measures."],
-        ["Exceptions", "Exclude information demonstrably public without breach, already lawfully known, independently developed or lawfully received without restriction. A legally required disclosure is limited to what is required, with notice when lawfully permitted."],
-        ["No transfer or purchase", "Sharing information transfers no ownership, license beyond the stated purpose, service commitment or payment obligation. Final parties, term, remedies and applicable law must be reviewed before execution."]
+        [
+          "Limited purpose",
+          "Use nonpublic information only to evaluate or perform the stated business purpose. Restrict disclosure to authorized recipients with a need to know and appropriate confidentiality duties; take reasonable protective measures."
+        ],
+        [
+          "Exceptions",
+          "Exclude information demonstrably public without breach, already lawfully known, independently developed or lawfully received without restriction. A legally required disclosure is limited to what is required, with notice when lawfully permitted."
+        ],
+        [
+          "No transfer or purchase",
+          "Sharing information transfers no ownership, license beyond the stated purpose, service commitment or payment obligation. Final parties, term, remedies and applicable law must be reviewed before execution."
+        ]
       ]
     },
     {
-      "id": "testimonial-permission", "title": "Optional testimonial & case-study permission", "stage": "Optional after delivery", "kind": "Release draft",
+      "id": "testimonial-permission",
+      "title": "Optional testimonial & case-study permission",
+      "stage": "Optional after delivery",
+      "kind": "Release draft",
       "summary": "Choose exactly what results, quote, name or logo may be published.",
-      "fields": ["Exact quote and factual evidence reference", "Permitted name, role, company and logo", "Approved metrics, date range and attribution caveats", "Approved channels and duration", "Compensation / material relationship disclosure", "Restrictions and withdrawal contact"],
+      "fields": [
+        "Exact quote and factual evidence reference",
+        "Permitted name, role, company and logo",
+        "Approved metrics, date range and attribution caveats",
+        "Approved channels and duration",
+        "Compensation / material relationship disclosure",
+        "Restrictions and withdrawal contact"
+      ],
       "sections": [
-        ["Voluntary and specific", "Participation is optional and not a condition of service. Only the final approved quote, identifiers and metrics may be published within the agreed channels and term. No blanket perpetual permission is implied."],
-        ["Honesty", "Do not fabricate, materially alter or guarantee outcomes from a testimonial. Disclose relevant incentives and relationships. Permission does not restrict honest reviews or authorize publication of private subscriber information. Agree a process for future withdrawal and treatment of already published material."]
+        [
+          "Voluntary and specific",
+          "Participation is optional and not a condition of service. Only the final approved quote, identifiers and metrics may be published within the agreed channels and term. No blanket perpetual permission is implied."
+        ],
+        [
+          "Honesty",
+          "Do not fabricate, materially alter or guarantee outcomes from a testimonial. Disclose relevant incentives and relationships. Permission does not restrict honest reviews or authorize publication of private subscriber information. Agree a process for future withdrawal and treatment of already published material."
+        ]
       ]
     },
     {
-      "id": "offboarding", "title": "Cancellation & offboarding request", "stage": "End of service", "kind": "Service request draft",
+      "id": "offboarding",
+      "title": "Cancellation & offboarding request",
+      "stage": "End of service",
+      "kind": "Service request draft",
       "summary": "Request cancellation and plan account access, exports and handoff.",
-      "fields": ["Agreement / subscription reference (no payment details)", "Requested end date", "Reason (optional)", "Required deliverable handoff", "Authorized recipient for data return", "Access revocation owner", "Open invoices / refund request reference"],
+      "fields": [
+        "Agreement / subscription reference (no payment details)",
+        "Requested end date",
+        "Reason (optional)",
+        "Required deliverable handoff",
+        "Authorized recipient for data return",
+        "Access revocation owner",
+        "Open invoices / refund request reference"
+      ],
       "sections": [
-        ["Request and confirmation", "Preparing this draft does not cancel a Stripe subscription or end a contract. Send the request through the monitored service channel; InboxEdge confirms receipt, effective date and any applicable signed notice or refund terms. Do not treat silence as cancellation confirmation."],
-        ["Handoff", "Agree exports, final deliverables, platform ownership, access removal and data return/deletion. Preserve lawful records and suppression requirements. Client retains its own store and marketing accounts; agency must not hold access hostage."]
+        [
+          "Cancellation request and effect",
+          "Preparing this page does not transmit a request or cancel billing. Use the actual functioning billing portal or al@inboxedgeagency.com. Cancel at any time without penalty; requests received before the next charge stop future renewal. Service normally ends at the current paid-period end unless an earlier end is agreed. Acknowledgment is due within two business days; a delay does not invalidate timely receipt."
+        ],
+        [
+          "Refund handling",
+          "Duplicate/error charges are refunded. If agreed service cannot be provided, document an agreed refund/credit for the undelivered portion. Voluntary mid-period cancellation normally continues service to period-end; disputed/partial work is reviewed against scope and evidence, preserving applicable rights. This request form itself executes no refund."
+        ],
+        [
+          "Handoff, access and retention",
+          "Within ten business days of service end, provide agreed deliverables and an inventory of settings, work and access. Confirm subscription cancellation separately from access revocation; the client retains its accounts. Offer agreed return/export, then delete agency-controlled working copies within 30 calendar days after handoff subject to documented instructions/necessary lawful holds. Preserve source accounts, suppressions and restricted business records as agreed, and disclose actual provider backup/log exceptions. Do not hold access or data hostage."
+        ]
       ]
     },
     {
-      "id": "privacy-request", "title": "Privacy / data request", "stage": "As needed", "kind": "Service request draft",
+      "id": "privacy-request",
+      "title": "Privacy / data request",
+      "stage": "As needed",
+      "kind": "Service request draft",
       "summary": "Ask about access, correction, deletion, objection or consent withdrawal.",
-      "fields": ["Relationship to InboxEdge or named client business", "Request type", "Relevant business email", "Description and affected systems (no sensitive records)", "Preferred response method"],
+      "fields": [
+        "Relationship to InboxEdge or named client business",
+        "Request type",
+        "Relevant business email",
+        "Description and affected systems (no sensitive records)",
+        "Preferred response method"
+      ],
       "sections": [
-        ["Verification and routing", "Only minimum information should be requested to verify identity and authority through an appropriate secure channel. Do not upload identification documents here. If InboxEdge processes data for a client, route the request to that controller and assist as agreed."],
-        ["Business contact", "Contact TiQology Holdings LLC, doing business as InboxEdge Agency, at al@inboxedgeagency.com or +1 (844) 924-2588. Business mailing address: 8753 Dunwoody Place STE G, Atlanta, GA 30350. This preparation page does not send your request; use the monitored contact channel and retain the acknowledgment."],
-        ["No automatic action", "Preparing this draft does not delete data, stop billing or prove a request has been received. Applicable rights, deadlines and retention exceptions depend on the facts and jurisdiction. Marketing opt-out should remain available through the actual message unsubscribe link without requiring this form."]
+        [
+          "Verification and routing",
+          "Only minimum information should be requested to verify identity and authority through an appropriate secure channel. Do not upload identification documents here. If InboxEdge processes data for a client, route the request to that controller and assist as agreed."
+        ],
+        [
+          "Business contact",
+          "Contact InboxEdge Agency, at al@inboxedgeagency.com or +1 (844) 924-2588. Business mailing address: 8753 Dunwoody Place STE G, Atlanta, GA 30350. This preparation page does not send your request; use the monitored contact channel and retain the acknowledgment."
+        ],
+        [
+          "No automatic action",
+          "Preparing this draft does not delete data, stop billing or prove a request has been received. Applicable rights, deadlines and retention exceptions depend on the facts and jurisdiction. Marketing opt-out should remain available through the actual message unsubscribe link without requiring this form."
+        ]
       ]
     },
     {
-      "id": "electronic-records", "title": "Electronic records & signing choice", "stage": "With final signature request", "kind": "Consent draft",
+      "id": "electronic-records",
+      "title": "Electronic records & signing choice",
+      "stage": "With final signature request",
+      "kind": "Consent draft",
       "summary": "Explain the electronic signing process and how clients retain their records.",
-      "fields": ["Signer business email and role", "Documents and versions to be signed", "Paper / accessible-format request", "Record delivery and withdrawal contact"],
+      "fields": [
+        "Signer business email and role",
+        "Documents and versions to be signed",
+        "Paper / accessible-format request",
+        "Record delivery and withdrawal contact"
+      ],
       "sections": [
-        ["Informed choice", "The final signing invitation must identify the documents, ability to decline electronic signing, paper alternatives, contact/update procedures and any relevant withdrawal conditions or fees. Consent to electronic records is separate from agreement to the substantive contract and separate from marketing consent."],
-        ["Access and retention", "Before final acceptance, disclose supported browser, email and PDF/download requirements and let the recipient demonstrate access as applicable. Provide a complete reproducible copy of the final terms and signed record. Do not rely on an editable web page as the only retained agreement."],
-        ["Signing integrity", "The connected signing service must link the verified signer, intent, consent, exact document version and completion time, retain the audit record, prevent silent alteration and deliver copies to authorized parties. Typing a name in this preparation page is not the connected signing process."]
+        [
+          "Informed choice",
+          "The final signing invitation must identify the documents, ability to decline electronic signing, paper alternatives, contact/update procedures and any relevant withdrawal conditions or fees. Consent to electronic records is separate from agreement to the substantive contract and separate from marketing consent."
+        ],
+        [
+          "Access and retention",
+          "Before final acceptance, disclose supported browser, email and PDF/download requirements and let the recipient demonstrate access as applicable. Provide a complete reproducible copy of the final terms and signed record. Do not rely on an editable web page as the only retained agreement."
+        ],
+        [
+          "Signing integrity",
+          "The connected signing service must link the verified signer, intent, consent, exact document version and completion time, retain the audit record, prevent silent alteration and deliver copies to authorized parties. Typing a name in this preparation page is not the connected signing process."
+        ]
       ]
     }
   ]
