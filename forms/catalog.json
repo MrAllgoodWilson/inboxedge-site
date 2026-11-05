@@ -11,7 +11,7 @@
         "Business website",
         "Business / trading name",
         "Current email platform",
-        "Preferred package: Basic $500/month, Standard $1,000/month, Premium $2,000/month, or undecided",
+        "Preferred package: Basic $250/month, Standard $500/month, Premium $1,000/month, or undecided",
         "Main goals and current challenges",
         "Audience countries and business industry",
         "Preferred consultation days and times (include timezone)"
@@ -58,7 +58,7 @@
         ],
         [
           "Scope and document priority",
-          "Services are limited to the completed statement of work and named package. Basic is $500/month, Standard $1,000/month and Premium $2,000/month. Client-specific deliverable quantities, dates, dependencies, account identifiers, reviewers and exclusions must be completed before signing. A later mutually accepted change order governs only the terms it expressly changes; the completed scope governs deliverable detail and the services agreement governs general terms. An account-access authorization cannot expand fees or the agreed services."
+          "Services are limited to the completed statement of work and named package. Basic is $250/month, Standard $500/month and Premium $1,000/month. Client-specific deliverable quantities, dates, dependencies, account identifiers, reviewers and exclusions must be completed before signing. A later mutually accepted change order governs only the terms it expressly changes; the completed scope governs deliverable detail and the services agreement governs general terms. An account-access authorization cannot expand fees or the agreed services."
         ],
         [
           "Monthly billing and service start",
@@ -129,15 +129,15 @@
       ],
       "sections": [
         [
-          "Basic - $500/month",
+          "Basic - $250/month",
           "One-time onboarding: Klaviyo setup/configuration and a three-email welcome sequence. Recurring: agreed maintenance, one promotional campaign per paid month, basic segmentation and the monthly report. The completed schedule names deliverable dates, accounts and approver. No payment or signed order is created by preparing this scope."
         ],
         [
-          "Standard - $1,000/month",
+          "Standard - $500/month",
           "Includes Basic services, with four promotional campaigns TOTAL per paid month, not four plus Basic's one. One-time onboarding adds a four-email abandoned-cart sequence and the agreed post-purchase flow; complete the post-purchase message count and dated milestones. Recurring scope includes agreed upkeep, subject-line testing, advanced segmentation, monthly reporting and a strategy call every two weeks."
         ],
         [
-          "Premium - $2,000/month",
+          "Premium - $1,000/month",
           "Includes Standard services, plus agreed initial win-back/re-engagement and VIP flows, promotional calendar, SMS strategy, revenue-attribution reporting, weekly strategy calls and a named account manager. The client-specific scope MUST state the exact monthly campaign total, flow message counts, dates and real assigned manager before signing. No unlimited campaign volume, staffed role or message count is inferred from this draft. SMS strategy grants no paid activation."
         ],
         [
